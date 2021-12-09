@@ -1,0 +1,179 @@
+body {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+.naw {
+    color: red;
+    position: fixed;
+    left: 35px;
+    width: 250px;
+    top: 3%;
+    
+    text-shadow:5px 2px 5px yellow;
+    font-variant:small-caps ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 90px;
+    
+    animation-name: whoosh;
+    animation-timing-function: ease out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    
+    position: absolute;
+    display: block;
+    animation: beat 1s infinite linear;
+}
+
+@keyframes beat {
+    10% { transform: scale(0.9); }
+    20% { transform: scale(0.75); }
+    30% { transform: scale(1); }
+    100% { transform: scale(0.75); }
+}
+
+.naw1 {
+    color: yellow;
+    position: fixed;
+    left: 2%;
+    width: 350px;
+    top: 19%;
+    
+    text-shadow: 5px 3px 5px red;
+    font-variant:small-caps ;
+    text-align: center;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 60px;
+    
+    animation-name: whoosh;
+    animation-timing-function: ease out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    
+    position: absolute;
+    display: block;
+    animation: beat 1s infinite linear;
+}
+
+#naw3 {
+    position: fixed;
+    left: 2%;
+    width: 340px;
+    top: 85%;
+    border-radius: 0 10px 10px 25px;
+    
+    text-shadow:4px 4px 2px red;
+    font-variant:small-caps ;
+    text-align: center;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 50px;
+    color:#050505;
+    animation-name:colorchange;
+    animation-duration:0.6s;
+    animation-delay:1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+
+@keyframes colorchange {
+    0% {color:yellow;}
+    2% {color:green;}
+    3% {color:violin;}
+    4% {color:blue;}
+    5% {color:brown;}
+    6% {color:white;}
+    7% {color:red;}
+    8% {color:orange;}
+    9% {color:pink;}
+    35% {color:green;}
+    67% {color:cyan;}
+    68% {color:red;}
+    69% {color:lime;}
+    70% {color:cyan;}
+    71% {color:yellow;}
+    72% {color:magenta;}
+    73% {color:yellow;}
+    94% {color:green;}
+    95% {color:blue;}
+    96% {color:white;}
+    97% {color:red;}
+    100% {color:lime;}
+}
+@keyframes colorchanges {
+    2% {color:green;}
+    3% {color:violin;}
+    0% {color:yellow;}
+    4% {color:blue;}
+    5% {color:brown;}
+    6% {color:white;}
+    7% {color:red;}
+    8% {color:orange;}
+    9% {color:pink;}
+    35% {color:green;}
+    68% {color:red;}
+    70% {color:cyan;}
+    67% {color:cyan;}
+    69% {color:lime;}
+    72% {color:magenta;}
+    71% {color:yellow;}
+    94% {color:green;}
+    96% {color:white;}
+    73% {color:yellow;}
+    97% {color:red;}
+    95% {color:blue;}
+    100% {color:lime;}
+}
+
+.si {
+    position: fixed;
+    left: 2%;
+    text-align: center;
+    width: 340px;
+    top: 75%;
+    border-radius: 0 10px 10px 25px;
+    
+    text-shadow: 3px 3px 5px yellow;
+    font-variant:small-caps ;
+    text-align: center;
+    font-family: Raleway;
+    font-weight: bold;
+    color: yellow;
+    font-size: 50px;
+    animation-name:colorchanges;
+    animation-duration:0.6s;
+    animation-delay:1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+@media screen and (min-width:800px)
+{
+  #canvas{
+    width: 100vw;
+    height: 100vh;
+  }
+  .naw{
+    top: 110px;
+    left: 250px;
+    font-size: 150px;
+  }
+  .naw1{
+    left: 250px;
+    font-size: 150px;
+  }
+  #naw3{
+    font-size: 150px;
+    left: 250px;
+  }
+  .si{
+    font-size: 150px;
+    left: 250px;
+    text-align: center;
+    border: 5px solid yellow;
+  }
+}
